@@ -5,6 +5,23 @@ import javax.xml.stream.XMLInputFactory;
 public class SavingsAccount extends BankAccount{
     private static final double minBalance = 0;
      static double rate;
+
+    public static double getRate() {
+        return rate;
+    }
+
+    public static void setRate(double rate) {
+        SavingsAccount.rate = rate;
+    }
+
+    public double getMaxWithdrawalLimit() {
+        return maxWithdrawalLimit;
+    }
+
+    public void setMaxWithdrawalLimit(double maxWithdrawalLimit) {
+        this.maxWithdrawalLimit = maxWithdrawalLimit;
+    }
+
     double maxWithdrawalLimit;
 
     public SavingsAccount(String name, double balance, double maxWithdrawalLimit, double rate) {
