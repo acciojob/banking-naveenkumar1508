@@ -2,6 +2,22 @@ package com.driver;
 
 public class BankAccount {
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRemAmount() {
+        return remAmount;
+    }
+
+    public void setRemAmount(int remAmount) {
+        this.remAmount = remAmount;
+    }
+
     private String name;
     private static double balance;
 
